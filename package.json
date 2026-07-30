@@ -1,0 +1,6 @@
+{
+  "name": "codebase-memory-mcp-rc-repros",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal reproductions for codebase-memory-mcp 0.9.1-rc.1 findings"
+}
