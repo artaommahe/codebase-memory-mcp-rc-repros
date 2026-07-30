@@ -14,8 +14,8 @@ cd codebase-memory-mcp-rc-repros
 codebase-memory-mcp cli index_repository --repo-path "$PWD" --mode full --name cbm-rc-repros
 ```
 
-Index result on this repo: **32 nodes / 44 edges**, `parse_partial_count: 0`,
-`not_indexed_files_count: 601`.
+Index result on a fresh clone: **42 nodes / 54 edges**, `parse_partial_count: 0`,
+`not_indexed_files_count: 600`.
 
 > The default branch is deliberately **`trunk`**, and there is deliberately **no `main`
 > branch** — that is what Case D needs. Keep it that way when cloning.
@@ -94,11 +94,11 @@ codebase-memory-mcp cli index_status --project cbm-rc-repros | wc -c
 ```
 
 ```
-31968      # ~8k tokens, for a graph of 32 nodes / 44 edges
+31931      # ~8k tokens, for a graph of 42 nodes / 54 edges
 ```
 
-500 of the 601 `not_indexed` entries are enumerated inline, and **all 500 of them are
-`.svg` assets**; the `not_indexed` block alone is 33,727 chars of JSON. There is no
+500 of the 600 `not_indexed` entries are enumerated inline, and **all 500 of them are
+`.svg` assets**; the `not_indexed` block alone is 33,719 chars of JSON. There is no
 parameter to trim or omit the list (`--verbose` only *adds* a git-context block).
 
 On a real ~11.8k-file repo the same call returns **105,771 chars (~26k tokens)**:
@@ -140,11 +140,11 @@ codebase-memory-mcp cli query_graph --project cbm-rc-repros \
 
 ```
 rows: 1  (cols: t c)
-  "44" "44"
+  "54" "54"
 total: 1
 ```
 
-`44` is the total edge count in the graph. Instead of one row per edge type, a single
+`54` is the total edge count in the graph. Instead of one row per edge type, a single
 row is returned and the grouping-key column has been overwritten with the aggregate
 value. `labels(a)` behaves the same way. No error or warning is emitted.
 
