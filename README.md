@@ -243,3 +243,7 @@ codebase-memory-mcp cli query_graph --project cbm-rc-repros \
 | `assets/icons/*.svg` (600) | C | deliberately-ignored files that dominate `index_status` |
 | `.gitignore`, `dist/`, `debug.log` | C | gitignored entries |
 | branch `trunk`, no `main` | D | default branch that isn't `main` |
+
+---
+
+*This repository and its issue reports were produced by Claude Code on behalf of @artaommahe.*
