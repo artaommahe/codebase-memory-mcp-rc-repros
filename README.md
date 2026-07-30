@@ -162,6 +162,21 @@ Both controls work correctly:
 
 ---
 
+## Filed issues
+
+| Case | Issue |
+|---|---|
+| A — cross-file `CALLS` edges missing | [DeusData/codebase-memory-mcp#1354](https://github.com/DeusData/codebase-memory-mcp/issues/1354) |
+| B — same-name misattribution / no confidence in `trace_path` | [#1355](https://github.com/DeusData/codebase-memory-mcp/issues/1355) |
+| C — `index_status` payload bloat | [#1356](https://github.com/DeusData/codebase-memory-mcp/issues/1356) |
+| D — `detect_changes` default base `main` | [#1357](https://github.com/DeusData/codebase-memory-mcp/issues/1357) |
+| E — `query_graph` aggregate grouping key | [#1358](https://github.com/DeusData/codebase-memory-mcp/issues/1358) |
+| (no repo needed) `cli` stdin deadlock | [#1359](https://github.com/DeusData/codebase-memory-mcp/issues/1359) |
+| (no repo needed) macOS allocator warning | [#1360](https://github.com/DeusData/codebase-memory-mcp/issues/1360) |
+| (no repo needed) `--help` omits `check_index_coverage` | [#1361](https://github.com/DeusData/codebase-memory-mcp/issues/1361) |
+
+---
+
 ## Layout
 
 | Path | Case | Purpose |
